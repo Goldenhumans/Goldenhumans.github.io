@@ -35,7 +35,75 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
-  
+   <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            background: linear-gradient(to bottom, #FB4E4E, #FC1414);
+            color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .button::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.5), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .button:hover::before {
+            opacity: 1;
+        }
+
+        .button img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        .button .title {
+            font-size: 24px;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        .button .subtitle {
+            font-size: 15px;
+            margin-top: 2px;
+        }
+ /* Style the container */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 50%; /* 16:9 aspect ratio (change as needed) */
+            overflow: hidden;
+        }
+
+        /* Style the iframe */
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
   
   
 </head>
@@ -74,9 +142,25 @@
                 <h3 class="mbr-section-title mb-0 mbr-fonts-style display-2">
                     <strong>Information System</strong></h3>
                 
-       <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
-<div class="commonninja_component pid-ca2b5ee9-34b9-4c2b-8777-7115981ef7d7"></div>
-                    
+       <center>
+  <a href="https://goldenhumans.github.io/note.html" class="button">
+        <img src="https://static.vecteezy.com/system/resources/previews/009/377/766/original/3d-book-icon-with-transparent-background-free-png.png" alt="Button Image">
+        <div class="title">Notes</div>
+        <div class="subtitle">All Available Subjects and Other Notes</div>
+    </a>
+
+<a href="https://goldenhumans.github.io/page4.html" class="button">
+        <img src="https://cdn-icons-png.flaticon.com/512/1430/1430896.png" alt="Button Image">
+        <div class="title">Assignments</div>
+        <div class="subtitle">All Available Assignments</div>
+    </a>
+
+<a href="https://goldenhumans.github.io/Members.html" class="button">
+        <img src="https://www.ieee.org/content/dam/ieee-org/ieee/web/org/homepage/ieee-at-a-glance/members-bold-icon.png" alt="Button Image">
+        <div class="title">Members</div>
+        <div class="subtitle">Golden Humans</div>
+    </a>
+</center>
                 
             </div>
         </div>
@@ -87,12 +171,11 @@
 </section>
 
 <section data-bs-version="5.1" class="clients2 cid-tul0fBD8Oc mbr-parallax-background" id="clients2-y">
-
-    
-<script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
-<div class="commonninja_component pid-75d22a74-e380-4df7-98de-0ba7f42f5222"></div>
-  
-  
+<center> <font color="white" size="50"> Presentations</font></center>
+    <!-- Full-sized iframe without scrolling -->
+    <div class="iframe-container">
+        <iframe src="https://www.youtube.com/embed/iZ9HvLEYLa4" allowfullscreen></iframe>
+    </div>
   
   
 </section>
