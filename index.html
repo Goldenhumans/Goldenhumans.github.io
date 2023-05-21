@@ -125,7 +125,7 @@
 </head>
 <body>
   <!-- Loading overlay markup -->
-<!--<div id="loading-overlay"></div> -->
+<div id="loading-overlay"></div>
  
 
 <section data-bs-version="5.1" class="header4 cid-tnUejjBcc1 mbr-fullscreen mbr-parallax-background" id="header4-0">
@@ -271,12 +271,16 @@
 
   
   <script>
-    // Hide the loading overlay when the page finishes loading
-    window.addEventListener('load', function() {
-      var loadingOverlay = document.getElementById('loading-overlay');
-      loadingOverlay.style.display = 'none';
-    });
-  </script>
+  // Show the loading overlay
+  var loadingOverlay = document.getElementById('loading-overlay');
+  loadingOverlay.style.display = 'block';
+
+  // Remove the loading overlay after 3 seconds
+  setTimeout(function() {
+    loadingOverlay.style.display = 'none';
+  }, 3000);
+</script>
+
   
   </body>
 </html>
