@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Name List with Search</title>
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #ccc;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Our Golden Humans</h1>
+  <div class="container">
+    <input type="text" id="searchInput" placeholder="Search..." />
+    <ul id="nameList">
+        <li>Senuka Laktharu</li>
+        <li>Canindu Samanpriya</li>
+        <li>Dison Nadula</li>
+        <li>Heshan Buddhika</li>
+        <li>Ishara Kumara</li>
+        <li>Lasiru Thathsara</li>
+        <li>Maleesha Sandakelum</li>
+        <li>Nadun Isuru</li>
+        <li>Pasindu Nimeshana</li>
+        <li>Sanith Malindu</li>
+        <li>Saraja Nethmira</li>
+        <li>Tharindu Sandaruwan</li>
+        <li>Vishwa Sachintha</li>
+        <li>Yasith Nirmal</li>
+        <li>Yohan Aloka</li>
+        <li>Sasith Sunera</li>
+        <li>Kaveesha Lakshan</li>
+        <li>Buddhi Sandaruwan</li>
+        <li>Maheesha Nethminee</li>
+<li>Sandunee Hansika</li>
+<li>Ayeshani Dinojika</li>
+<li>Wandanee Nawodya</li>
+<li>Gaguli Chathurangi</li>
+<li>Gayani Upendra</li>
+<li>Gihanya Kulavindi</li>
+<li>Imashi Uththara</li>
+<li>Kavija Sithmini</li>
+<li>Maleesha Deshani</li>
+<li>Nethmi Dulasha</li>
+<li>Nethmi Wasana</li>
+<li>Oshini Sathsarani</li>
+<li>Piyumi Nimesha</li>
+<li>Sashini Nawodani</li>
+<li>Sithumi Nissarani</li>
+<li>Tenuri Pimasha</li>
+<li>Tharushi Rashmini</li>
+<li>Thashmila Maduwanthi</li>
+<li>Wathsala Gayani</li>
+    </ul>
+  </div>
+
+  <script>
+    // JavaScript code for filtering the list based on search input
+    const searchInput = document.getElementById('searchInput');
+    const nameList = document.getElementById('nameList');
+    const listItems = nameList.getElementsByTagName('li');
+
+    searchInput.addEventListener('keyup', function (event) {
+      const searchQuery = event.target.value.toLowerCase();
+
+      for (let i = 0; i < listItems.length; i++) {
+        const listItem = listItems[i];
+        const name = listItem.innerText.toLowerCase();
+
+        if (name.includes(searchQuery)) {
+          listItem.style.display = '';
+        } else {
+          listItem.style.display = 'none';
+        }
+      }
+    });
+  </script>
+</body>
+</html>
